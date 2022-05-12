@@ -41,10 +41,67 @@ a{
 .header-button a{
     color: black;
 }
+.first-column{
+    padding: 15px 15px;
+}
+.col{
+    background-color: #b5ddff;
+    text-align: center;
+    padding: 10px 10px;
+    margin-top: 10px;
+    border-radius: 20px;
+}
+.col-apple{
+    text-align: left;
+    background-color: #b5ddff;
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+.col i{
+    color: #0184fd;
+}
+h2{
+    color: #0686fd;
+    margin-bottom: 10px;
+}
+p{
+    margin-bottom: 10px;
+}
+.apple{
+    background-color: #0184fd;
+    border-radius: 15px;
+    padding: 5px 5px;
+    text-align: center;
+    width: 10%;
+}
+.apple a{
+    color: white;
+}
+img{
+    width: 100%;
+}
 @media screen and (min-width:768px) {
-    
+    .first-column{
+        display: flex;
+        flex-wrap: wrap;
+       align-items: stretch;
+       justify-content: space-between;
+    }
+    .col-apple{
+        width: 66%;
+        margin-top: 10px;
+        margin-right: 0.5rem;
+    }
+    .col{
+        width: calc(96%/3);
+    }
+    .apple{
+        text-align: center;
+        width: 200px;
+    }
 }
 @media screen and (min-width:992px) {
+    
     .ul-menu{
         display: block;
     }
@@ -58,5 +115,15 @@ a{
     }
     .icon-menu{
         display: none;
+    }
+    .col-apple{
+        display: flex;
+        width: 66%;
+        margin-top: 10px;
+        margin-right: 0.5rem;
+        align-items: flex-end;
+    }
+    .col-apple .apple-div{
+       margin-bottom: 10%;
     }
 }
