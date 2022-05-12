@@ -6,11 +6,6 @@
 body{
     font-family: 'PT Sans', sans-serif;
 }
-.container{
-    max-width: 1170px;
-    width: 90%;
-    margin: 0 auto;
-}
 header{
     background-color: #0184fd;
     height: 80px;
@@ -40,6 +35,9 @@ a{
 }
 .header-button a{
     color: black;
+}
+main{
+    width: 100%;
 }
 .first-column{
     padding: 15px 15px;
@@ -80,6 +78,36 @@ p{
 img{
     width: 100%;
 }
+.planning1{
+    color: white;  
+}
+.planning1 h2{
+    color: white;
+    font-size: 40px;
+}
+.planning2{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px 10px;
+    text-align: center;
+}
+.planning2 h2{
+    color: black;
+}
+.strategic-plan p{
+    padding:15px 0;
+
+}
+.strategic-plan{
+    background-color: #9792e4;
+    width: 100%;
+    padding: 30px 15px;
+}
+.arrow-down-violet{
+    background-color:#9792e4 ;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
 @media screen and (min-width:768px) {
     .first-column{
         display: flex;
@@ -101,7 +129,6 @@ img{
     }
 }
 @media screen and (min-width:992px) {
-    
     .ul-menu{
         display: block;
     }
@@ -125,5 +152,20 @@ img{
     }
     .col-apple .apple-div{
        margin-bottom: 10%;
+    }
+    .strategic-plan{
+        display: flex;
+        align-items: flex-end;
+        justify-content: space-around;
+    }
+    .planning2{
+        margin-top: 30%;
+        width: 40%;
+    }
+    .planning1{
+        width: 40%;
+    }
+    .planning1 img{
+        margin-bottom: 60%;
     }
 }
