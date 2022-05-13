@@ -52,7 +52,9 @@ main{
 .col-apple{
     text-align: left;
     background-color: #b5ddff;
-    padding: 10px 10px;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 10px;
     border-radius: 20px;
 }
 .col i{
@@ -96,7 +98,6 @@ img{
 }
 .strategic-plan p{
     padding:15px 0;
-
 }
 .strategic-plan{
     background-color: #9792e4;
@@ -108,12 +109,73 @@ img{
     padding: 10px 15px;
     border-radius: 50%;
 }
+.expert-partners{
+    text-align: center;
+    padding: 15px;
+}
+.title-expert{
+    color: #9792e4;
+}
+.partners{
+    background-color: #9792e4;
+    color: white;
+    border-radius: 20px;
+    padding: 30px 0;
+    margin: 30px 0;
+}
+.img-container {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%; 
+    margin-left: 23px;   
+}
+.img-container img{
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+.benefits{
+    background-color: #9792e4;
+    padding: 10px;
+}
+.benefits h2{
+    color: white;
+    text-align: center;
+}
+.benefits-col{
+    background-color: white;
+    margin-bottom: 10px;
+    border-radius: 20px;
+    text-align: left;
+    padding: 10px;
+}
+.benefits-col {
+    color: #9792e4;
+}
+.benefits-col p{
+    color: black;
+}
+.benefits-col h2{
+    color: #9792e4;
+}
+.more-button a{
+    background-color: #9792e4;
+    color: white;
+    border-radius: 20px;
+    padding: 5px 15px;
+}
+.benefits-column .benefits-col h2{
+    text-align: left;
+}
+
+
 @media screen and (min-width:768px) {
     .first-column{
         display: flex;
         flex-wrap: wrap;
-       align-items: stretch;
-       justify-content: space-between;
+        align-items: stretch;
+        justify-content: space-between;
     }
     .col-apple{
         width: 66%;
@@ -127,7 +189,22 @@ img{
         text-align: center;
         width: 200px;
     }
+    .partners {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 10px;
+    }  
+    .benefits-column{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .benefits-col{
+        width: calc(98%/2);
+    }
 }
+
 @media screen and (min-width:992px) {
     .ul-menu{
         display: block;
@@ -168,4 +245,19 @@ img{
     .planning1 img{
         margin-bottom: 60%;
     }
+    .partners {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 10px;
+    }
+    .benefits-column{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .benefits-col{
+        width: calc(96%/3);
+    }
+    
 }
