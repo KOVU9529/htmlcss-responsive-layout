@@ -6,6 +6,9 @@
 body{
     font-family: 'PT Sans', sans-serif;
 }
+
+/*SEZIONE HEADER*/
+
 header{
     background-color: #0184fd;
     height: 80px;
@@ -39,6 +42,9 @@ a{
 main{
     width: 100%;
 }
+
+/*SEZIONE FIRST-COLUMN*/
+
 .first-column{
     padding: 15px 15px;
 }
@@ -70,7 +76,7 @@ p{
 .apple{
     background-color: #0184fd;
     border-radius: 15px;
-    padding: 5px 5px;
+    padding: 5px 10px;
     text-align: center;
     width: 10%;
 }
@@ -79,7 +85,11 @@ p{
 }
 img{
     width: 100%;
+    margin-bottom: -5px;
 }
+
+/*SEZIONE STRATEGIC-PLAN*/
+
 .planning1{
     color: white;  
 }
@@ -109,9 +119,12 @@ img{
     padding: 10px 15px;
     border-radius: 50%;
 }
+
+/*SEZIONE PARTNERS*/
+
 .expert-partners{
     text-align: center;
-    padding: 15px;
+    padding: 15px 15px;
 }
 .title-expert{
     color: #9792e4;
@@ -120,24 +133,34 @@ img{
     background-color: #9792e4;
     color: white;
     border-radius: 20px;
-    padding: 30px 0;
+    padding: 30px 30px;
     margin: 30px 0;
 }
 .img-container {
+   
+    right: 50%;
     width: 200px;
     height: 200px;
     overflow: hidden;
     border-radius: 50%; 
-    margin-left: 23px;   
 }
 .img-container img{
    width: 100%;
    height: 100%;
    object-fit: cover;
 }
+.text-partners{
+    text-align: center;
+}
+
+/*SEZIONE BENEFITS*/
+
 .benefits{
     background-color: #9792e4;
-    padding: 10px;
+    padding: 10px 15px;
+}
+.benefits-column{
+    padding: 10px 15px;
 }
 .benefits h2{
     color: white;
@@ -152,6 +175,9 @@ img{
 }
 .benefits-col {
     color: #9792e4;
+}
+.number{
+    font-size: 40px;
 }
 .benefits-col p{
     color: black;
@@ -169,6 +195,107 @@ img{
     text-align: left;
 }
 
+/*SEZIONE ABOUT US*/
+
+.About-Us{
+    padding: 20px 15px;
+}
+.About-Us h2{
+    color: #9792e4;
+    font-size: 50px;
+}
+.about{
+    background-color: #9792e4;
+    color: white;
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+.about-us-container{
+    padding: 10px 15px;
+}
+.img-container-about {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%; 
+}
+.img-icon{
+    position: relative;
+}
+.title-img h2{
+    font-size: 20px;
+    padding: 20px 0;
+}
+.About-Us .fa-solid.fa-quote-left{
+    color: #9792e4;
+}
+.fa-solid.fa-quote-left.fa-2x{
+    position: absolute;
+    color: #9792e4;
+    left: 143px;
+    top: 0%;
+    font-size: 70px;
+}
+
+/*SEZIONE IT-FREE*/
+
+.It-free{
+    background-color: #9792e4;
+    padding: 15px;
+}
+.container-free{
+    text-align: center;
+    padding: 20px 15px;
+    color: white;
+}
+.container-free h2{
+    color: white;
+    margin-top: 30px;
+}
+.legacy{
+    margin-top: 30px;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+.fa-solid.fa-circle.fa-2xs{
+    padding-left: 10px;
+}
+.container-free .yellow{
+    color: #fdc15f;
+    margin-top: 30px ;
+}
+.gray{
+    color: #c7c5f0;
+}
+.container-free p{
+    margin: 30px 0;
+}
+.Get-started a{
+    color: #9792e4;
+}
+.Get-started{
+    background-color: white;
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+
+/*FOOTER*/
+
+footer{
+    text-align: center;
+    background-color: #333333;
+    color: white;
+}
+.container-foot{
+    padding: 20px 15px;
+}
+.container-foot p a{
+    color: #706d9e;
+    text-decoration: underline;
+}
 
 @media screen and (min-width:768px) {
     .first-column{
@@ -203,6 +330,16 @@ img{
     .benefits-col{
         width: calc(98%/2);
     }
+    .about-us-container{
+        display: flex;
+    }
+    .about-us-container{
+        padding: 10px 50px;
+    }
+    .container-foot{
+        padding: 20px 105px;
+    }
+    
 }
 
 @media screen and (min-width:992px) {
@@ -228,7 +365,7 @@ img{
         align-items: flex-end;
     }
     .col-apple .apple-div{
-       margin-bottom: 10%;
+       margin-bottom: 20%;
     }
     .strategic-plan{
         display: flex;
@@ -259,5 +396,13 @@ img{
     .benefits-col{
         width: calc(96%/3);
     }
-    
+    .about-us-container{
+        display: flex;
+    }
+    .about-us-container{
+        padding: 10px 50px;
+    }
+    .container-foot{
+        padding: 20px 105px;
+    }
 }
